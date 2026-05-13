@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yardımcı Kurumlar</title>
+    <link rel="icon" href="gorseller/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="web">
+        <header id="banner">
+            <div style="display: flex; align-items: center;">
+                <a href="index.html"><img src="gorseller/SiteLogo.png" alt="logo" class="logo"></a>
+                <h1>SOSYAL AJANDA</h1>
+            </div>
+
+            <div class="AnaAyarlar">
+                <div class="AramaKutusu">
+                    <input type="text" id="aramaInput" placeholder="Sitede ara..." autocomplete="off">
+                    <button type="button" id="aramaButonu">🔍</button>
+                </div>
+                <nav class="DilMenuKapsayici">
+                    <button class="DilAnaButon">🌍 Dil Seçin</button>
+                    <div class="DilListesi">
+                        <a href="javascript:void(0)" onclick="dilDegistir('en')">English</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('ru')">Русский</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('it')">İtaliano</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('fr')">Français</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('de')">Deutsch</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('tr')">Türkçe</a>
+                    </div>
+                </nav>
+                <div id="google_translate_element" style="display:none !important;"></div>
+                <div class="RenkMenu">
+                    <button class="RenkButon">Renk Körlüğü</button>
+                    <div class="RenkSecim">
+                        <input type="radio" name="renk-modu" id="NormalGörünüm" checked>
+                        <label for="NormalGörünüm">Normal Görünüm</label>
+                        <input type="radio" name="renk-modu" id="GriMod">
+                        <label for="GriMod">Tam Renk Körlüğü (Gri)</label>
+                        <input type="radio" name="renk-modu" id="KirmiziMod">
+                        <label for="KirmiziMod">Protanopi (Kırmızı)</label>
+                        <input type="radio" name="renk-modu" id="YesilMod">
+                        <label for="YesilMod">Deuteranopi (Yeşil)</label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="AnaGovde">
+            <aside id="menu">
+                <div class="YanBaslik">MENÜ</div>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="kurumlar.html">Yardımcı Kurumlar</a></li>
+                    <li><a href="haklar.html">Yasal Haklar</a></li>
+                    <li><a href="hikayeler.html">Başarı Hikayeleri</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </aside>
+
+            <main id="icerik">
+                <section id="BilgiKutusu">
+                    <h3>Müracaat Edilebilecek Kurumlar ve Destek Hatları</h3>
+
+                    <table class="KurumTablosu">
+                        <thead>
+                            <tr>
+                                <th>Kurum / Kuruluş Adı</th>
+                                <th>Müracaat ve Hizmet Alanı</th>
+                                <th>İletişim Hattı</th>
+                                <th>Web Adresi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Aile ve Sosyal Hizmetler Bakanlığı</strong></td>
+                                <td>Kadın, Çocuk, Engelli ve Yaşlı Hizmetleri</td>
+                                <td><span class="AloHatti">ALO 183</span></td>
+                                <td><a href="https://www.aile.gov.tr" target="_blank" class="WebButon">Siteye Git</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sosyal Güvenlik Kurumu (SGK)</strong></td>
+                                <td>Sigorta, Emeklilik ve GSS İşlemleri</td>
+                                <td><span class="AloHatti">ALO 170</span></td>
+                                <td><a href="https://www.sgk.gov.tr" target="_blank" class="WebButon">Siteye Git</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vakıflar Genel Müdürlüğü</strong></td>
+                                <td>Muhtaç Maaşı ve Aşevi Hizmetleri</td>
+                                <td><span class="KurumsalHat">0312 415 50 00</span></td>
+                                <td><a href="https://www.vgm.gov.tr" target="_blank" class="WebButon">Siteye Git</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>İŞKUR</strong></td>
+                                <td>İstihdam ve İşsizlik Maaşı</td>
+                                <td><span class="AloHatti">ALO 170</span></td>
+                                <td><a href="https://www.iskur.gov.tr" target="_blank" class="WebButon">Siteye Git</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sağlık Bakanlığı</strong></td>
+                                <td>Sağlık Hizmetleri ve Hasta Hakları</td>
+                                <td><span class="AloHatti">ALO 184</span></td>
+                                <td><a href="https://www.saglik.gov.tr" target="_blank" class="WebButon">Siteye Git</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Türk Kızılay</strong></td>
+                                <td>İnsani Yardım ve Kan Bağışı</td>
+                                <td><span class="AloHatti">ALO 168</span></td>
+                                <td><a href="https://www.kizilay.org.tr" target="_blank" class="WebButon">Siteye Git</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Yeşilay</strong></td>
+                                <td>Bağımlılıkla Mücadele</td>
+                                <td><span class="AloHatti">ALO 115</span></td>
+                                <td><a href="https://www.yesilay.org.tr" target="_blank" class="WebButon">Siteye Git</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mor Çatı Kadın Sığınağı</strong></td>
+                                <td>Şiddetle Mücadele ve Barınma</td>
+                                <td><span class="KurumsalHat">0212 292 52 32</span></td>
+                                <td><a href="https://morcati.org.tr" target="_blank" class="WebButon">Siteye Git</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Darüşşafaka Cemiyeti</strong></td>
+                                <td>Eğitimde Fırsat Eşitliği</td>
+                                <td><span class="KurumsalHat">0212 939 28 00</span></td>
+                                <td><a href="https://www.darussafaka.org" target="_blank" class="WebButon">Siteye
+                                        Git</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>TEV (Türk Eğitim Vakfı)</strong></td>
+                                <td>Burs ve Eğitim Destekleri</td>
+                                <td><span class="KurumsalHat">444 0 838</span></td>
+                                <td><a href="https://www.tev.org.tr" target="_blank" class="WebButon">Siteye Git</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br><br>
+
+                    <h3>Tanıtım ve Bilgilendirme Videosu</h3>
+                    <div class="VideoAlani">
+                        <video width="100%" controls poster="gorseller/SGKKapak.png">
+                            <source src="videos/KurumsalVideo.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="VideoUyarisi">
+                        <span class="UyarıIkon">⚠️</span>
+                        <p class="UyarıMetni">
+                            <strong>Önemli Uyarı:</strong> Video içerisindeki bilgiler yayınlandığı tarihe aittir.
+                            Güncel şartlar için kurum web sitelerini ziyaret ediniz.
+                        </p>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            <div class="AltIcerik">
+                <div class="AltSutun">
+                    <h4>Hızlı Erişim</h4>
+                    <ul>
+                        <li><a href="haklar.html">Yasal Haklar</a></li>
+                        <li><a href="kurumlar.html">Kurumlar</a></li>
+                        <li><a href="iletisim.html">Bize Ulaşın</a></li>
+                    </ul>
+                </div>
+                <div class="AltSutun">
+                    <h4>İletişim</h4>
+                    <p>E-posta: info@sosyalajanda.com</p>
+                    <p>Konum: Manavgat, Antalya</p>
+                </div>
+            </div>
+            <hr>
+            <div class="TelifYazisi">
+                <p>&copy; 2026 Sosyal Ajanda. Tüm Hakları Saklıdır. | <strong>Web Tasarım Projesi</strong></p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

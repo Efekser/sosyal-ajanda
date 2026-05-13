@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="icon" href="gorseller/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="web">
+        <header id="banner">
+            <div>
+                <a href="index.html"><img src="gorseller/SiteLogo.png" alt="logo" class="logo"></a>
+            </div>
+            <div class="AnaAyarlar">
+                <h1>SOSYAL AJANDA</h1>
+                <div class="AramaKutusu">
+                    <input type="text" id="aramaInput" placeholder="Sitede ara..." autocomplete="off">
+                    <button type="button" id="aramaButonu">🔍</button>
+                </div>
+                <nav class="DilMenuKapsayici">
+                    <button class="DilAnaButon">🌍 Dil Seçin</button>
+                    <div class="DilListesi">
+                        <a href="javascript:void(0)" onclick="dilDegistir('en')">English</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('ru')">Русский</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('it')">İtaliano</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('fr')">Français</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('de')">Deutsch</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('tr')">Türkçe</a>
+                    </div>
+                </nav>
+                <div id="google_translate_element" style="display:none !important;"></div>
+                <div class="RenkMenu">
+                    <button class="RenkButon">Renk Körlüğü</button>
+                    <div class="RenkSecim">
+                        <input type="radio" name="renk-modu" id="NormalGörünüm" checked>
+                        <label for="NormalGörünüm">Normal Görünüm</label>
+
+                        <input type="radio" name="renk-modu" id="GriMod">
+                        <label for="GriMod">Tam Renk Körlüğü (Gri)</label>
+
+                        <input type="radio" name="renk-modu" id="KirmiziMod">
+                        <label for="KirmiziMod">Protanopi (Kırmızı)</label>
+
+                        <input type="radio" name="renk-modu" id="YesilMod">
+                        <label for="YesilMod">Deuteranopi (Yeşil)</label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="AnaGovde">
+            <aside id="menu">
+                <div class="YanBaslik">MENÜ</div>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="kurumlar.html">Yardımcı Kurumlar</a></li>
+                    <li><a href="haklar.html">Yasal Haklar</a></li>
+                    <li><a href="hikayeler.html">Başarı Hikayeleri</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </aside>
+
+            <main id="icerik">
+                <section id="Slider">
+                    <img src="gorseller/SlideGorsel1.jpg" alt="gorsel1" class="Resim aktif" width="900">
+                    <img src="gorseller/SlideGorsel2.jpg" alt="gorsel2" class="Resim" width="900">
+                    <img src="gorseller/SlideGorsel3.jpg" alt="gorsel3" class="Resim" width="900">
+                    <div class="tus">
+                        <button onclick="degistir(-1)">&lt;</button>
+                        <span id="sayac">1 / 3</span>
+                        <button onclick="degistir(1)">&gt;</button>
+                    </div>
+                </section>
+
+                <section class="KartAlani">
+                    <div class="Kart">
+                        <i>⚖️</i>
+                        <h4>Yasal Haklar</h4>
+                        <p>Sahip olduğunuz tüm sosyal hakları keşfedin.</p>
+                        <a href="haklar.html" class="WebButon" style="margin-top: 15px;">İncele</a>
+                    </div>
+
+                    <div class="Kart">
+                        <i>🏢</i>
+                        <h4>Yardımcı Kurumlar</h4>
+                        <p>Size destek olacak kurumların tam listesi.</p>
+                        <a href="kurumlar.html" class="WebButon" style="margin-top: 15px;">Görüntüle</a>
+                    </div>
+
+                    <div class="Kart">
+                        <i>📞</i>
+                        <h4>Bize Ulaşın</h4>
+                        <p>Görüşleriniz var mı?</p>
+                        <a href="iletisim.html" class="WebButon" style="margin-top: 15px;">Bize Ulaşın</a>
+                    </div>
+                </section>
+
+                <section id="BilgiKutusu">
+                    <h3>Yasal Haklarınız Neler?</h3>
+                    <ul>
+                        <li><strong>Ücretsiz Sağlık Hizmetleri:</strong> Sosyal güvencesi olmayan bireylerin hakları.
+                        </li>
+                        <li><strong>Barınma Hakkı:</strong> 6284 sayılı Kanun kapsamındaki haklar.</li>
+                        <li><strong>İstihdam Kotası:</strong> Özel ve kamu sektöründeki zorunluluklar.</li>
+                        <li><strong><a href="haklar.html">Devamı...</a></strong></li>
+                    </ul>
+                </section>
+
+                <section class="KisaNot"
+                    style="padding: 25px; border-style: solid; border-width: 2px; margin-top: 30px;">
+                    <h4 style="color: #2e7d32; margin-bottom: 10px;">💡 Biliyor muydunuz?</h4>
+                    <p>
+                        Engelli bireylerin toplu taşıma araçlarından ücretsiz yararlanabilmesi için sadece engelli
+                        kimlik kartını göstermesi yeterlidir. Refakatçi hakkı ise sadece "Ağır Engelli" ibaresi bulunan
+                        raporlar için geçerlidir.
+                    </p>
+                </section>
+
+                <section id="AtaturkSözü">
+                    <div class="SozIcerik">
+                        <div class="Tirnak"></div>
+                        <blockquote cite="https://www.ktb.gov.tr/TR-96468/siyaset-ve-baris.html">
+                            Yurtta barış, dünyada barış için çalışıyoruz.
+                        </blockquote>
+                        <div class="YazarIsmi">— <strong>Mustafa Kemal ATATÜRK</strong></div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            <div class="AltIcerik">
+                <div class="AltSutun">
+                    <h4>Hızlı Erişim</h4>
+                    <ul>
+                        <li><a href="haklar.html">Yasal Haklar</a></li>
+                        <li><a href="kurumlar.html">Kurumlar</a></li>
+                        <li><a href="iletisim.html">Bize Ulaşın</a></li>
+                    </ul>
+                </div>
+                <div class="AltSutun">
+                    <h4>İletişim</h4>
+                    <p>E-posta: info@sosyalajanda.com</p>
+                    <p>Konum: Manavgat, Antalya</p>
+                </div>
+            </div>
+            <hr>
+            <div class="TelifYazisi">
+                <p>&copy; 2026 Sosyal Ajanda. | <strong>Web Tasarım Projesi</strong></p>
+            </div>
+            <div id="ai-chat-wrapper">
+                <button id="ai-chat-toggle"><span>🤖</span> Sosyal Asistan</button>
+
+                <div id="ai-chat-window">
+                    <div class="ai-chat-header">
+                        <h4>Gemini Sosyal Destek</h4>
+                        <button id="ai-chat-close">×</button>
+                    </div>
+                    <div id="ai-chat-messages">
+                        <div class="ai-message bot">Merhaba! Ben Sosyal Ajanda Asistanı. Haklarınız veya başvurular
+                            hakkında size nasıl yardımcı olabilirim?</div>
+                    </div>
+                    <div class="ai-chat-input">
+                        <input type="text" id="ai-user-input" placeholder="Sorunuzu buraya yazın..." autocomplete="off">
+                        <button id="ai-send-btn">➤</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasal Haklar</title>
+    <link rel="icon" href="gorseller/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="web">
+        <header id="banner">
+            <div style="display: flex; align-items: center;">
+                <a href="index.html"><img src="gorseller/SiteLogo.png" alt="logo" class="logo"></a>
+                <h1>SOSYAL AJANDA</h1>
+            </div>
+
+            <div class="AnaAyarlar">
+                <div class="AramaKutusu">
+                    <input type="text" id="aramaInput" placeholder="Sitede ara..." autocomplete="off">
+                    <button type="button" id="aramaButonu">🔍</button>
+                </div>
+                <nav class="DilMenuKapsayici">
+                    <button class="DilAnaButon">🌍 Dil Seçin</button>
+                    <div class="DilListesi">
+                        <a href="javascript:void(0)" onclick="dilDegistir('en')">English</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('ru')">Русский</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('it')">İtaliano</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('fr')">Français</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('de')">Deutsch</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('tr')">Türkçe</a>
+                    </div>
+                </nav>
+                <div id="google_translate_element" style="display:none !important;"></div>
+                <div class="RenkMenu">
+                    <button class="RenkButon">Renk Körlüğü</button>
+                    <div class="RenkSecim">
+                        <input type="radio" name="renk-modu" id="NormalGörünüm" checked>
+                        <label for="NormalGörünüm">Normal Görünüm</label>
+                        <input type="radio" name="renk-modu" id="GriMod">
+                        <label for="GriMod">Tam Renk Körlüğü (Gri)</label>
+                        <input type="radio" name="renk-modu" id="KirmiziMod">
+                        <label for="KirmiziMod">Protanopi (Kırmızı)</label>
+                        <input type="radio" name="renk-modu" id="YesilMod">
+                        <label for="YesilMod">Deuteranopi (Yeşil)</label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="AnaGovde">
+            <aside id="menu">
+                <div class="YanBaslik">MENÜ</div>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="kurumlar.html">Yardımcı Kurumlar</a></li>
+                    <li><a href="haklar.html">Yasal Haklar</a></li>
+                    <li><a href="hikayeler.html">Başarı Hikayeleri</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </aside>
+
+            <main id="icerik">
+                <section id="BilgiKutusu">
+                    <div class="HaklarUstBaslik">
+                        <h3>Sosyal Hizmet ve Yardım Mevzuatı</h3>
+                        <p>T.C. Aile ve Sosyal Hizmetler Bakanlığı tarafından sağlanan yasal haklar ve destek kalemleri
+                            (KAYSİS Mevzuatına Uygundur).</p>
+                    </div>
+
+                    <div class="HaklarGrid">
+                        <div class="HakKart">
+                            <div class="KartBaslik">♿ Engelli Aylıkları</div>
+                            <ul>
+                                <li>%40-%69 arası engelli aylığı.</li>
+                                <li>%70 ve üzeri tam engelli aylığı.</li>
+                                <li>18 yaş altı engelli yakını aylığı.</li>
+                            </ul>
+                        </div>
+                        <div class="HakKart">
+                            <div class="KartBaslik">🏠 Evde Bakım Yardımı</div>
+                            <ul>
+                                <li>Tam bağımlı birey bakım desteği.</li>
+                                <li>Akraba bakım sorumluluğu ödemesi.</li>
+                                <li>Süreli/Süresiz raporlu bakım hakkı.</li>
+                            </ul>
+                        </div>
+                        <div class="HakKart">
+                            <div class="KartBaslik">⚖️ Kadın Hakları (6284)</div>
+                            <ul>
+                                <li>Uzaklaştırma ve koruma tedbirleri.</li>
+                                <li>Şiddet mağduru geçici barınma hakkı.</li>
+                                <li>Kimlik bilgilerinin gizlenmesi hakkı.</li>
+                            </ul>
+                        </div>
+
+                        <div class="HakKart">
+                            <div class="KartBaslik">👶 Çocuk Destekleri (SED)</div>
+                            <ul>
+                                <li>Ekonomik destek yardımı (SED).</li>
+                                <li>Koruyucu aile yanına yerleştirme.</li>
+                                <li>Socio-ekonomik rehberlik hizmeti.</li>
+                            </ul>
+                        </div>
+                        <div class="HakKart">
+                            <div class="KartBaslik">📚 Şartlı Eğitim Yardımı</div>
+                            <ul>
+                                <li>İlk/Ortaöğretim devam yardımı.</li>
+                                <li>Ücretsiz materyal ve kitap desteği.</li>
+                                <li>Öğrenci taşıma ve yemek desteği.</li>
+                            </ul>
+                        </div>
+                        <div class="HakKart">
+                            <div class="KartBaslik">🏥 Şartlı Sağlık Yardımı</div>
+                            <ul>
+                                <li>0-6 yaş çocuk sağlık kontrol yardımı.</li>
+                                <li>Gebe ve lohusalık sağlık desteği.</li>
+                                <li>Hastanede doğum yapma yardımı.</li>
+                            </ul>
+                        </div>
+
+                        <div class="HakKart">
+                            <div class="KartBaslik">👴 Yaşlılık Hakları</div>
+                            <ul>
+                                <li>65 yaş üstü muhtaçlık aylığı.</li>
+                                <li>Ücretsiz şehir içi ulaşım hakkı.</li>
+                                <li>Huzurevi ve yaşlı bakım hizmeti.</li>
+                            </ul>
+                        </div>
+                        <div class="HakKart">
+                            <div class="KartBaslik">💼 İstihdam ve İş Hayatı</div>
+                            <ul>
+                                <li>Kamuda %4, özelde %3 engelli kotası.</li>
+                                <li>Korumalı işyeri desteği.</li>
+                                <li>Süt izni ve çalışma saati düzenlemesi.</li>
+                            </ul>
+                        </div>
+                        <div class="HakKart">
+                            <div class="KartBaslik">🎖️ Şehit ve Gazi Hakları</div>
+                            <ul>
+                                <li>Kamu kurumlarına sınavsız atama hakkı.</li>
+                                <li>TOKİ faizsiz konut kredisi desteği.</li>
+                                <li>İkinci iş imkanı ve gazi aylığı.</li>
+                            </ul>
+                        </div>
+
+                        <div class="HakKart">
+                            <div class="KartBaslik">💸 Vergi Muafiyetleri</div>
+                            <ul>
+                                <li>ÖTV ve MTV muafiyeti (Engelli).</li>
+                                <li>Emlak vergisi muafiyeti.</li>
+                                <li>Gümrük vergisi muafiyeti.</li>
+                            </ul>
+                        </div>
+                        <div class="HakKart">
+                            <div class="KartBaslik">🔥 Enerji Tüketim Destekleri</div>
+                            <ul>
+                                <li>Elektrik tüketim desteği yardımı.</li>
+                                <li>Doğalgaz tüketim desteği ödemesi.</li>
+                                <li>Kronik hastalar için kesintisiz enerji.</li>
+                            </ul>
+                        </div>
+                        <div class="HakKart">
+                            <div class="KartBaslik">➕ Diğer Sosyal Haklar</div>
+                            <ul>
+                                <li>Çoklu doğum yardımı (İkiz/Üçüz).</li>
+                                <li>Muhtaç asker ailesi yardımı.</li>
+                                <li>Barınma ve ev onarım yardımları.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="VideoUyarisi">
+                        <span class="UyarıIkon">⚠️</span>
+                        <p class="UyarıMetni">
+                            <strong>Detaylı Bilgi İçin Lütfen İletişime Geçiniz.</strong>
+                        </p>
+                    </div>
+                    <div class="ErisilebilirlikBar">
+                        <div class="AksiyonKart">
+                            <span class="Simge">📞</span>
+                            <div class="Yazi">
+                                <strong>ALO 183</strong>
+                                <span>Sosyal Destek Hattı</span>
+                            </div>
+                            <a href="tel:183" class="AramaBtn">Hemen Ara</a>
+                        </div>
+                        <div class="AksiyonKart">
+                            <span class="Simge">💻</span>
+                            <div class="Yazi">
+                                <strong>e-Devlet Kapısı</strong>
+                                <span>Hızlı Başvuru Merkezi</span>
+                            </div>
+                            <a href="https://www.turkiye.gov.tr" target="_blank" class="AramaBtn">Giriş Yap</a>
+                        </div>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            <div class="AltIcerik">
+                <div class="AltSutun">
+                    <h4>Hızlı Erişim</h4>
+                    <ul>
+                        <li><a href="haklar.html">Yasal Haklar</a></li>
+                        <li><a href="kurumlar.html">Kurumlar</a></li>
+                        <li><a href="iletisim.html">Bize Ulaşın</a></li>
+                    </ul>
+                </div>
+                <div class="AltSutun">
+                    <h4>İletişim</h4>
+                    <p>E-posta: info@sosyalajanda.com</p>
+                    <p>Konum: Manavgat, Antalya</p>
+                </div>
+            </div>
+            <hr>
+            <div class="TelifYazisi">
+                <p>&copy; 2026 Sosyal Ajanda. Tüm Hakları Saklıdır. | <strong>Web Tasarım Projesi</strong></p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

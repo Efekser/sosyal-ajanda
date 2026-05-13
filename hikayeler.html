@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başarı Hikayeleri</title>
+    <link rel="icon" href="gorseller/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="web">
+        <header id="banner">
+            <div style="display: flex; align-items: center;">
+                <a href="index.html"><img src="gorseller/SiteLogo.png" alt="logo" class="logo"></a>
+                <h1>SOSYAL AJANDA</h1>
+            </div>
+
+            <div class="AnaAyarlar">
+                <div class="AramaKutusu">
+                    <input type="text" id="aramaInput" placeholder="Sitede ara..." autocomplete="off">
+                    <button type="button" id="aramaButonu">🔍</button>
+                </div>
+                <nav class="DilMenuKapsayici">
+                    <button class="DilAnaButon">🌍 Dil Seçin</button>
+                    <div class="DilListesi">
+                        <a href="javascript:void(0)" onclick="dilDegistir('en')">English</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('ru')">Русский</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('it')">İtaliano</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('fr')">Français</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('de')">Deutsch</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('tr')">Türkçe</a>
+                    </div>
+                </nav>
+                <div id="google_translate_element" style="display:none !important;"></div>
+                <div class="RenkMenu">
+                    <button class="RenkButon">Renk Körlüğü</button>
+                    <div class="RenkSecim">
+                        <input type="radio" name="renk-modu" id="NormalGörünüm" checked>
+                        <label for="NormalGörünüm">Normal Görünüm</label>
+
+                        <input type="radio" name="renk-modu" id="GriMod">
+                        <label for="GriMod">Tam Renk Körlüğü (Gri)</label>
+
+                        <input type="radio" name="renk-modu" id="KirmiziMod">
+                        <label for="KirmiziMod">Protanopi (Kırmızı)</label>
+
+                        <input type="radio" name="renk-modu" id="YesilMod">
+                        <label for="YesilMod">Deuteranopi (Yeşil)</label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="AnaGovde">
+            <aside id="menu">
+                <div class="YanBaslik">MENÜ</div>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="kurumlar.html">Yardımcı Kurumlar</a></li>
+                    <li><a href="haklar.html">Yasal Haklar</a></li>
+                    <li><a href="hikayeler.html">Başarı Hikayeleri</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </aside>
+
+            <main id="icerik">
+                <section id="BilgiKutusu">
+                    <h3>Engel Tanımayan Başarı Hikayeleri</h3>
+                    <div class="HikayeKapsayici">
+                        <h4>1. Eşref Armağan Kimdir?</h4>
+                        <p>
+                            Dünyaya görme engelli olarak gelen Eşref Armağan, hiç görmediği renkleri ve perspektifi
+                            kalbinde hissederek muazzam tablolara imza attı.
+                            Harvard Üniversitesi'nin araştırmalarına konu olan yeteneğiyle, dokunarak üç boyutlu çizim
+                            yapabilen dünyadaki nadir sanatçılardan biridir.
+                        </p>
+                        <div class="SesKutusu">
+                            <p><strong>Hikayeyi Sesli Dinle:</strong></p>
+                            <audio controls>
+                                <source src="sesler/ArmaganSes.mp3" type="audio/mpeg">
+                                Tarayıcınız ses öğesini desteklemiyor.
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="HikayeKapsayici">
+                        <h4>2. Stephen Hawking Kimdir?</h4>
+                        <p>
+                            Genç yaşta ALS hastalığına yakalanan ve ömrünün büyük kısmını tekerlekli sandalyede, konuşma
+                            cihazı yardımıyla geçiren Hawking, modern fiziğin en büyük isimlerinden biri oldu.
+                            Bedeni hareket edemese de zihniyle kara delikleri ve evrenin sırlarını aydınlatarak insan
+                            iradesinin sınırsızlığını tüm dünyaya gösterdi.
+                        </p>
+                        <div class="SesKutusu">
+                            <p><strong>Hikayeyi Sesli Dinle:</strong></p>
+                            <audio controls>
+                                <source src="sesler/HawkingSes.mp3" type="audio/mpeg">
+                                Tarayıcınız ses öğesini desteklemiyor.
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="HikayeKapsayici">
+                        <h4>3. Beethoven Kimdir?</h4>
+                        <p>
+                            Dünyanın en büyük bestecilerinden biri olan Beethoven, kariyerinin zirvesindeyken işitme
+                            yetisini tamamen kaybetti.
+                            Ancak en görkemli eserlerinden biri olan 9. Senfoni'yi hiçbir sesi duymadığı o derin
+                            sessizlik döneminde besteledi. Müziği duymasa da ruhundaki notalarla dünyayı büyülemeye
+                            devam etti.
+                        </p>
+                        <div class="SesKutusu">
+                            <p><strong>Hikayeyi Sesli Dinle:</strong></p>
+                            <audio controls>
+                                <source src="sesler/BeethovenSes.mp3" type="audio/mpeg">
+                                Tarayıcınız ses öğesini desteklemiyor.
+                            </audio>
+                        </div>
+                    </div>
+
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            <div class="AltIcerik">
+                <div class="AltSutun">
+                    <h4>Hızlı Erişim</h4>
+                    <ul>
+                        <li><a href="haklar.html">Yasal Haklar</a></li>
+                        <li><a href="kurumlar.html">Kurumlar</a></li>
+                        <li><a href="iletisim.html">Bize Ulaşın</a></li>
+                    </ul>
+                </div>
+                <div class="AltSutun">
+                    <h4>İletişim</h4>
+                    <p>E-posta: info@sosyalajanda.com</p>
+                    <p>Konum: Manavgat, Antalya</p>
+                </div>
+            </div>
+            <hr>
+            <div class="TelifYazisi">
+                <p>&copy; 2026 Sosyal Ajanda. Tüm Hakları Saklıdır. | <strong>Web Tasarım Projesi</strong></p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

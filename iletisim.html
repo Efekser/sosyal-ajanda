@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="icon" href="gorseller/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="web">
+        <header id="banner">
+            <div style="display: flex; align-items: center;">
+                <a href="index.html"><img src="gorseller/SiteLogo.png" alt="logo" class="logo"></a>
+                <h1>SOSYAL AJANDA</h1>
+            </div>
+
+            <div class="AnaAyarlar">
+                <div class="AramaKutusu">
+                    <input type="text" id="aramaInput" placeholder="Sitede ara..." autocomplete="off">
+                    <button type="button" id="aramaButonu">🔍</button>
+                </div>
+                <nav class="DilMenuKapsayici">
+                    <button class="DilAnaButon">🌍 Dil Seçin</button>
+                    <div class="DilListesi">
+                        <a href="javascript:void(0)" onclick="dilDegistir('en')">English</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('ru')">Русский</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('it')">İtaliano</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('fr')">Français</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('de')">Deutsch</a>
+                        <a href="javascript:void(0)" onclick="dilDegistir('tr')">Türkçe</a>
+                    </div>
+                </nav>
+                <div id="google_translate_element" style="display:none !important;"></div>
+                <div class="RenkMenu">
+                    <button class="RenkButon">Renk Körlüğü</button>
+                    <div class="RenkSecim">
+                        <input type="radio" name="renk-modu" id="NormalGörünüm" checked>
+                        <label for="NormalGörünüm">Normal Görünüm</label>
+
+                        <input type="radio" name="renk-modu" id="GriMod">
+                        <label for="GriMod">Tam Renk Körlüğü (Gri)</label>
+
+                        <input type="radio" name="renk-modu" id="KirmiziMod">
+                        <label for="KirmiziMod">Protanopi (Kırmızı)</label>
+
+                        <input type="radio" name="renk-modu" id="YesilMod">
+                        <label for="YesilMod">Deuteranopi (Yeşil)</label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="AnaGovde">
+            <aside id="menu">
+                <div class="YanBaslik">MENÜ</div>
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="kurumlar.html">Yardımcı Kurumlar</a></li>
+                    <li><a href="haklar.html">Yasal Haklar</a></li>
+                    <li><a href="hikayeler.html">Başarı Hikayeleri</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </aside>
+
+            <main id="icerik">
+                <section id="BilgiKutusu">
+                    <h3>Bize Mesaj Gönderin</h3>
+                    <p>Görüşleriniz ve Değerlendirmeleriniz İçin Formu Doldurabilirsiniz.</p>
+
+                    <div class="IletisimKapsayici">
+                        <div class="FormAlani">
+                            <form action="#" method="post">
+                                <fieldset class="FormGrup">
+                                    <legend class="FormBaslik">İletişim Formu</legend>
+
+                                    <p class="FormSatir">
+                                        <label for="adSoyad">Adınız Soyadınız:</label>
+                                        <input type="text" id="adSoyad" name="adSoyad" required
+                                            placeholder="Örn: Efe Keser">
+                                    </p>
+
+                                    <p class="FormSatir">
+                                        <label for="eposta">E-posta Adresiniz:</label>
+                                        <input type="email" id="eposta" name="eposta" required
+                                            placeholder="ornek@mail.com">
+                                    </p>
+
+                                    <p class="FormSatir">
+                                        <label for="konu">Konu:</label>
+                                        <select id="konu" name="konu">
+                                            <option value="bilgi">Genel Bilgi</option>
+                                            <option value="destek">Sosyal Destek</option>
+                                            <option value="diger">Diğer</option>
+                                        </select>
+                                    </p>
+
+                                    <p class="FormSatir">
+                                        <label for="mesaj">Mesajınız:</label>
+                                        <textarea id="mesaj" name="mesaj" rows="5"
+                                            placeholder="Lütfen mesajınızı buraya yazınız..."></textarea>
+                                    </p>
+
+                                    <button type="submit" class="RenkButon FormButon">MESAJI GÖNDER</button>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <div class="HaritaAlani">
+                            <h4>Konumumuz</h4>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51145.41873130765!2d31.3917808!3d36.7804473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c33054174313f9%3A0xc622634e2b0201!2sManavgat%2C%20Antalya!5e0!3m2!1str!2str!4v1712490000000"
+                                width="100%" height="400" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div class="AltIcerik">
+                <div class="AltSutun">
+                    <h4>Hızlı Erişim</h4>
+                    <ul>
+                        <li><a href="haklar.html">Yasal Haklar</a></li>
+                        <li><a href="kurumlar.html">Kurumlar</a></li>
+                        <li><a href="iletisim.html">Bize Ulaşın</a></li>
+                    </ul>
+                </div>
+                <div class="AltSutun">
+                    <h4>İletişim</h4>
+                    <p>E-posta: info@sosyalajanda.com</p>
+                    <p>Konum: Manavgat, Antalya</p>
+                </div>
+            </div>
+            <hr>
+            <div class="TelifYazisi">
+                <p>&copy; 2026 Sosyal Ajanda. Tüm Hakları Saklıdır. | <strong>Web Tasarım Projesi</strong></p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
